@@ -1,3 +1,3 @@
-export const sum = (a: number, b: number) => {
-    return a + b;
+export const parenthesesValidator = (string: string) => {
+    return true;
 }

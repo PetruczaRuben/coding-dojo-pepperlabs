@@ -1,0 +1,74 @@
+{
+  "env": {
+    "es2021": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "react-app",
+    "react-app/jest"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "**/vendor/**/*.js",
+    "**/Cesium"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "require-await": "error",
+    "eqeqeq": "error",
+    "default-case": "error",
+    "prefer-const": "error",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/semi": "error",
+    "no-empty": "off",
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "no-multiple-empty-lines": ["error", { "max":  1 }],
+    "padded-blocks": ["error", "never"],
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing": ["error"],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-irregular-whitespace": "error",
+    "no-multi-spaces": "error",
+    "space-infix-ops": "error",
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "comma",
+        "requireLast": false
+      },
+      "singleline": {
+        "delimiter": "comma",
+        "requireLast": false
+      }
+    }],
+    "object-curly-spacing": ["error", "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".json"
+        ]
+      }
+    }
+  }
+}
