@@ -7,10 +7,3 @@ The function should accept both (), and [] as valid parentheses.
 If we receive an empty string the output should be false.
 The function parenthesesValidator should be developed with a TDD approach.
 
-### Examples:
-- "()"              =>  true
-- ")([])]"          =>  false
-- "]"               =>  false
-- "(]"               =>  false
-- "[())((()[])()]"  =>  true
-
