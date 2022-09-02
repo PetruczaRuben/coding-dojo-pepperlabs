@@ -1,3 +1,3 @@
-export const parenthesesValidator = (string: string) => {
-    return true;
+export const rot13 = (message: string) => {
+    return message;
 }
