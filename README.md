@@ -1,10 +1,15 @@
 # Coding Dojo Kata
 ---
-### Description
-ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters
-after it in the alphabet. ROT13 is an example of the Caesar cipher.
+## Description
+Complete the function scramble(str1, str2) that returns true if a portion of str1 characters 
+can be rearranged to match str2, otherwise returns false.
 
-Create a function that takes a string and returns the string ciphered with Rot13. 
-If there are numbers or special characters included in the string, they should be returned 
-as they are. Only letters from the latin/english alphabet should be shifted, 
-like in the original Rot13 "implementation".
+- Only lower case letters will be used (a-z). No punctuation or digits will be included.
+
+#### Examples
+- scramble('rkqodlw', 'world') ==> True
+- scramble('cedewaraaossoqqyt', 'codewars') ==> True
+- scramble('katas', 'steak') ==> False
+
+Stretch: If there are multiple occurrences of the same character in string 2,
+it considers the number of times that characters appears in string 1
