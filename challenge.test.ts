@@ -1,4 +1,4 @@
-import {scramble} from './challange';
+import {scramble} from './challenge';
 
 describe('rot13', () => {
   test('expect true', () => {
