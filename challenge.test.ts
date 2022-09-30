@@ -93,6 +93,24 @@ describe('SnailIterator', () => {
     expect(subject.next()).toEqual(7);
     expect(subject.next()).toEqual(4);
   });
+
+  test('returns the middle element of the second array for the 8th time', () => {
+    const subject = new SnailIterator([
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ]);
+
+    expect(subject.next()).toEqual(1);
+    expect(subject.next()).toEqual(2);
+    expect(subject.next()).toEqual(3);
+    expect(subject.next()).toEqual(6);
+    expect(subject.next()).toEqual(9);
+    expect(subject.next()).toEqual(8);
+    expect(subject.next()).toEqual(7);
+    expect(subject.next()).toEqual(4);
+    expect(subject.next()).toEqual(5);
+  });
 });
 
 /*

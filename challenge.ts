@@ -10,15 +10,19 @@ export const snail = (matrix: number[][]): number[] => {
 };
 
 export class SnailIterator {
-  private readonly size: number;
+  private size: number;
   private x = -1;
   private y = 0;
 
-  constructor(private readonly matrix: number[][]) {
+  constructor(private matrix: number[][]) {
     this.size = matrix.length - 1;
   }
 
   next(): number | null {
+    if (this.areWeDone()) {
+      this.shrinkMatrix();
+      return this.matrix[this.y][this.x];
+    }
     if (this.cannotGoLeftAnymore() && !this.cannotGoUpAnymore()) {
       this.stepUp();
     } else if (this.cannotGoDownAnymore()) {
@@ -48,6 +52,10 @@ export class SnailIterator {
     this.x--;
   }
 
+  private areWeDone() {
+    return (this.x === 0 && this.y === 1);
+  }
+
   private cannotGoRightAnymore() {
     return this.x === this.size;
   }
@@ -62,5 +70,20 @@ export class SnailIterator {
 
   private cannotGoUpAnymore() {
     return this.y === 0;
+  }
+
+  //   . . . . . .
+  //   . X X X X .
+  //   . X X X X .
+  //   . X X X X .
+  //   . X X X X .
+  //   . . . . . .
+  private shrinkMatrix() {
+    let newMatrix = this.matrix.slice(1, - 1);
+    newMatrix = newMatrix.map(row => row.slice(1, - 1));
+    this.matrix = newMatrix;
+    this.size = this.matrix.length - 1;
+    this.x = 0;
+    this.y = 0;
   }
 }
