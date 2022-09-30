@@ -1,7 +1,7 @@
-import {scramble} from './challenge';
+import {highestScoringWord} from './challenge';
 
-describe('rot13', () => {
-  test('expect true', () => {
-    expect(scramble('pepper', 'labs')).toEqual(true);
+describe('highestScoringWord', () => {
+  test('dummy test', () => {
+    expect(highestScoringWord('Lorem ipsum dolor sit amet')).toEqual(' ');
   });
 });
