@@ -1,3 +1,3 @@
-export const firstNonRepeatingLetter = (word: string): string => {
-  return '';
-};
+export const nextBigger = (numberToRearrange:number): number => {
+  return 1222;
+}

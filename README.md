@@ -1,13 +1,15 @@
 # Coding Dojo Kata
 ---
 ## Description
-Write a function named firstNonRepeatingLetter that takes a string input, 
-and returns the first character that is not repeated anywhere in the string.
+Create a function that takes a positive integer and returns the next bigger number that can be formed by rearranging its digits.
 
-For example, if given the input 'stress', the function should return 't', 
-since the letter t only occurs once in the string, and occurs first in the string.
+For example:
+nextBigger(num: 12)   // returns 21
+nextBigger(num: 513)  // returns 531
+nextBigger(num: 2017) // returns 2071
+nextBigger(num: 2117) // returns 2171
 
-Upper- and lowercase letters are considered the same character, but the function should return the correct case 
-for the initial letter. For example, the input 'sTreSS' should return 'T'.
-
-If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
+If the digits can't be rearranged to form a bigger number, return -1 (or nil in Swift):
+nextBigger(num: 9)   // returns -1
+nextBigger(num: 111) // returns -1
+nextBigger(num: 531) // returns -1
