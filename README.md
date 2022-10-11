@@ -1,15 +1,8 @@
 # Coding Dojo Kata
 ---
 ## Description
-Create a function that takes a positive integer and returns the next bigger number that can be formed by rearranging its digits.
-
-For example:
-nextBigger(num: 12)   // returns 21
-nextBigger(num: 513)  // returns 531
-nextBigger(num: 2017) // returns 2071
-nextBigger(num: 2117) // returns 2171
-
-If the digits can't be rearranged to form a bigger number, return -1 (or nil in Swift):
-nextBigger(num: 9)   // returns -1
-nextBigger(num: 111) // returns -1
-nextBigger(num: 531) // returns -1
+Given a string of words, you need to find the highest scoring word. Each letter of a word
+scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+You need to return the highest scoring word as a string.
+If two words score the same, return the word that appears earliest in the original string.
+All letters will be lowercase and all inputs will be valid.

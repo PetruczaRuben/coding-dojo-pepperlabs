@@ -1,3 +1,3 @@
-export const nextBigger = (numberToRearrange:number): number => {
-  return 1222;
-}
+export const highestScoringWord = (words: string): string => {
+  return '';
+};

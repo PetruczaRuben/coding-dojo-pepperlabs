@@ -1,7 +1,7 @@
-import {nextBigger} from './challenge';
+import {highestScoringWord} from './challenge';
 
-describe('#nextBigger', () => {
-  test('returns -1 if the number can not be rearranged', () => {
-    expect(nextBigger(22)).toEqual(-1);
+describe('#highestScoringWord', () => {
+  test('dummy test', () => {
+    expect(highestScoringWord('what time are we climbing up the volcano')).toEqual('volcano');
   });
 });
