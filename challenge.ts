@@ -1,3 +1,3 @@
-export const highestScoringWord = (words: string): string => {
+export const formatDuration = (seconds: number): string => {
   return '';
 };

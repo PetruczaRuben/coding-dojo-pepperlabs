@@ -1,7 +1,9 @@
-import {highestScoringWord} from './challenge';
+import {formatDuration} from './challenge';
 
-describe('#highestScoringWord', () => {
-  test('dummy test', () => {
-    expect(highestScoringWord('what time are we climbing up the volcano')).toEqual('volcano');
-  });
+describe('#formatDuration', () => {
+    test.each([
+      { input: 0, readableFormat: 'now' }
+    ])('returns \'$readableFormat\' for \'$input\' seconds', ({ input, readableFormat}) => {
+      expect(formatDuration(input)).toEqual(readableFormat);
+    });
 });
