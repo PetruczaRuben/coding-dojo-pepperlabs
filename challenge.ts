@@ -1,3 +1,3 @@
-export const formatDuration = (seconds: number): string => {
+export const firstNonRepeatingLetter = (word: string): string => {
   return '';
 };

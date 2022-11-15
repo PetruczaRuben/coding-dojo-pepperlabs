@@ -1,26 +1,13 @@
 # Coding Dojo Kata
 ---
 ## Description
-Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds,
-in a human-friendly way.
+Write a function named firstNonRepeatingLetter that takes a string input, 
+and returns the first character that is not repeated anywhere in the string.
 
-The function must accept a non-negative integer. If it is zero, it just returns "now". 
-Otherwise, the duration is expressed as a combination of years, days, hours, minutes, seconds.
+For example, if given the input 'stress', the function should return 't', 
+since the letter t only occurs once in the string, and occurs first in the string.
 
-For the purpose of this Kata, a year is 365 days and a day is 24 hours.
+Upper- and lowercase letters are considered the same character, but the function should return the correct case 
+for the initial letter. For example, the input 'sTreSS' should return 'T'.
 
-It is much easier to understand with an example:
-* For seconds = 62, your function should return
-  "1 minute, 2 seconds"
-* For seconds = 3662, your function should return
-  "1 hour, 1 minute, 2 seconds"
-
-Detailed rules
-- The unit of time is used in plural if the integer is greater than 1.
-
-- The components are separated by a comma and a space (", "). 
-
-- A component will not appear at all if its value happens to be zero. 
-Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
-
-- The function should not return 61 seconds, but 1 minute and 1 second instead. 
+If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
