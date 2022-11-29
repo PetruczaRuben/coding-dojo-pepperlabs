@@ -18,8 +18,7 @@
     "sourceType": "module"
   },
   "ignorePatterns": [
-    "**/vendor/**/*.js",
-    "**/Cesium"
+    "**/vendor/**/*.js"
   ],
   "plugins": [
     "@typescript-eslint"
@@ -28,15 +27,20 @@
     "no-console": "warn",
     "require-await": "error",
     "eqeqeq": "error",
+    "semi": "off",
     "default-case": "error",
     "prefer-const": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/semi": "error",
     "no-empty": "off",
     "quotes": [2, "single", { "avoidEscape": true }],
+    "indent": ["warn", 2],
     "no-multiple-empty-lines": ["error", { "max":  1 }],
+    "eol-last": ["error"],
     "padded-blocks": ["error", "never"],
     "comma-spacing": "off",
     "@typescript-eslint/comma-spacing": ["error"],
@@ -56,7 +60,15 @@
         "requireLast": false
       }
     }],
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": ["error", "properties"],
+    "keyword-spacing": ["error", { "before": true }],
+    "@typescript-eslint/member-ordering": ["error", { "default": ["signature", "static-field", "static-method", "field", "constructor", "method"] }],
+    "react/jsx-first-prop-new-line": ["error", "multiline"],
+    "react/jsx-max-props-per-line": ["error", { "maximum": {
+      "single": 2,
+      "multi": 1
+    }}]
   },
   "settings": {
     "import/resolver": {
