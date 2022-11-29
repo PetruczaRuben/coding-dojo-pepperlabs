@@ -1,7 +1,8 @@
 {
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore . --fix"
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^28.1.6",
