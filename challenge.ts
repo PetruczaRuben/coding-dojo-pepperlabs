@@ -1,3 +1,3 @@
-export const nextBigger = (numberToRearrange:number) => {
-  return 1222;
-};
+export function extractRanges(numbers: number[]): string {
+  return '';
+}
