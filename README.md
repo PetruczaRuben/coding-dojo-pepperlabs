@@ -1,18 +1,28 @@
 # Coding Dojo Kata
 ---
-## Description
+## Two Sum
 
-A format for expressing an ordered list of integers is to use a comma separated list of either
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
 
-- individual integers
-- or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, '-'. 
-The range includes all integers in the interval including both endpoints. 
-It is not considered a range unless it spans at least 3 numbers. For example "12,13,15-17"
+Only one valid answer exists.
 
-Complete the solution so that it takes a list of integers in increasing order and 
-returns a correctly formatted string in the range format.
+### Example 1:
+```
+Input: nums = [2, 7, 11, 15], target = 9
+Output: [0, 1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
 
+### Example 2:
+```
+Input: nums = [3, 2, 4], target = 6
+Output: [1, 2]
+```
 
-Example: 
-extractRanges([-10, -9, -8, -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]);
-returns "-10--8,-6,-3-1,3-5,7-11,14,15,17-20"
+### Example 3:
+```
+Input: nums = [3, 3], target = 6
+Output: [0, 1]
+```

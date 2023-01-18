@@ -1,3 +1,3 @@
-export function extractRanges(numbers: number[]): string {
-  return '';
+export function twoSum(numbers: number[], target: number): number[] {
+  return [];
 }
