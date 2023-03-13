@@ -1,7 +1,7 @@
-import {maxProfit} from './challenge';
+import { trap } from './challenge';
 
-describe('#maxProfit', () => {
-  test('test', () => {
-    expect(maxProfit([0, 0, 0])).toEqual(0);
+describe('#isValidSet', () => {
+  test('returns true if every property is the same', () => {
+    expect(trap([1,0,1])).toEqual(1);
   });
 });

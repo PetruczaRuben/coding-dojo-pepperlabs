@@ -1,3 +1,3 @@
-export function maxProfit(prices: number[]): number {
+export function trap(height: number[]): number {
   return 0;
 }
