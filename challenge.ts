@@ -1,3 +1,1 @@
-export function trap(height: number[]): number {
-  return 0;
-}
+export default function schedule(startTime: number[], endTime: number[], profit: number[]): number[] {}

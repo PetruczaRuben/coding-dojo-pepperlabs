@@ -1,5 +1,5 @@
 # Coding dojo
 
-## Trapping Rain Water
+## Maximum Profit in Job Scheduling
 
-[Leetcode link](https://leetcode.com/problems/trapping-rain-water/)
+[Leetcode link](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)
