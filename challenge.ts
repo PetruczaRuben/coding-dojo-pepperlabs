@@ -1,1 +1,3 @@
-export default function schedule(startTime: number[], endTime: number[], profit: number[]): number[] {}
+export default function coinChange(coins: number[], amount: number): number {
+  return -1;
+}
